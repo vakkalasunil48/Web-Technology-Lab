@@ -1,12 +1,16 @@
 # Web-Technology-Lab
 
 ## Student Details
----------------------------------------------
+
 Student Name:  V.Sunil
+
 Roll Number:   24881A1260
+
 Section:       A
+
 Course Name:   Web Technologies
---------------------------------------------
+
+
 ## Week 1
 Description: Design a static webpage the page consists of table with set of links to products to link available in a online               mobile store each product link has a separate webpage to describe product information like image features                    list and a short video to demonstrate a product.
 
