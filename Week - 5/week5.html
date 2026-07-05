@@ -1,0 +1,82 @@
+<html>
+    <body bgcolor="lightyellow" align="center" >
+<h1>Email Registration</h1>
+<form> 
+    
+     <input type="text"  placeholder="UserName" id="U">
+     <br>
+     <br>
+      <input type="text"  placeholder="Email" id="E">
+     <br>
+     <br>
+     <input type="text"  placeholder="Mobile Number" id="M">
+     <br>
+     <br>
+     <input type="submit" value="submit"  onclick="return validate()">
+     <br>
+
+</form>
+
+<script>
+    function validate()
+    {
+    var un=document.getElementById("U");
+    var em=document.getElementById("E");
+    var mo=document.getElementById("M");
+    var uname=un.value;
+    var email=em.value;
+    var mobile=mo.value;
+    var unre =/^[a-zA-Z]+[0-9a-zA-Z._]*$/;
+
+
+    var ere = /^[a-zA-Z]+([\._]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    var mre = /^[6-9][0-9]{9}$/;
+
+    if(unre.test(uname))
+
+    {
+    if(ere.test(email))
+    {
+        if(mre.test(mobile))
+        {
+            
+            alert("Registered Successfully");
+            return true;
+        }
+        else
+        {
+            return error(mo);
+        }
+    }
+    
+    else
+    {
+        return error(em);
+    }
+    }
+
+    else
+    {
+        return error(un);
+    }
+}
+    function error(ele)
+
+    {
+        alert("Invalid");
+        ele.style.border="3px solid red";
+        ele.value ="";
+        ele.placeholder="Invalid";
+        ele.focus();
+        return False;''
+    }
+
+
+</script>
+                                                        <p align="right">Name: V.Sunil <br>
+                                                        Roll Number: 24881A1260<br>
+</p>                                                        <br>
+                                                    
+    </body>
+</html>
